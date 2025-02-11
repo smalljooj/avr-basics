@@ -1,0 +1,15 @@
+.ORG	0x0000
+    
+BEGIN:
+    
+    NOP
+    NOP
+    RCALL SUBROUTINE1
+    NOP
+    RJMP BEGIN
+
+
+SUBROUTINE1:
+    NOP
+    NOP
+    RET

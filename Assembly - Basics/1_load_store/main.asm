@@ -1,0 +1,20 @@
+.ORG	0x0000
+    
+;CISC
+;   MOV DESTINATION REG, SOURCE REG
+
+;RISC
+;   LOAD GENERAL REG, VALUE
+;   STORE SPECIAL REG, GENERAL REG
+    
+
+; turn on built in led on 13 pin
+    
+    LDI	R16, 0xFF
+    OUT DDRB, R16
+    
+    LDI R17, 0X20
+    OUT PORTB, R17
+    
+LOOP:
+    RJMP LOOP
